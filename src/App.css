@@ -1,38 +1,136 @@
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-side-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(204, 204, 204, 0),
+    rgba(198, 198, 198, 0.15),
+    rgba(190, 190, 190, 0.35),
+    rgba(173, 173, 173, 0.35),
+    rgba(173, 173, 173, 0.35)
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub-side-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(204, 204, 204, 0),
+    rgba(173, 173, 173, 0.2)
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.sub-side-wrapper {
+  transition: max-width 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-side-on {
+  max-width: 32rem;
+}
+
+.sub-side-off {
+  min-width: 0;
+  max-width: 0;
+}
+
+.multi-line-ellips {
+  width: 100%;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 115, 124, 0.22);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-button {
+  display: none;
+}
+
+div::-webkit-scrollbar {
+  width: 10px;
+}
+div::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 115, 124, 0.22);
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar-button {
+  display: none;
+}
+
+/** font area **/
+@font-face {
+  font-family: "Thin";
+  src: url("./assets/font/Pretendard-Thin.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Light";
+  src: url("./assets/font/Pretendard-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ExtraLight";
+  src: url("./assets/font/Pretendard-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/font/Pretendard-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("./assets/font/Pretendard-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("./assets/font/Pretendard-SemiBold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/font/Pretendard-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url("./assets/font/Pretendard-ExtraBold.otf");
+  font-weight: 700;
 }
