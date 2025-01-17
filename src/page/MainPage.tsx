@@ -9,6 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useThemeStore } from 'store/useThemeStore';
 import { useTheme as useStyledTheme } from 'styled-components';
 import { SkilsList } from 'section/SkilsList';
+
 const DarkModeIcon = styled.img`
     width:3rem;
     height:3rem;
@@ -16,7 +17,6 @@ const DarkModeIcon = styled.img`
     border:none;
     overflow: hidden;
 `
-
 
 export const MainPage = () => {
 
@@ -36,7 +36,6 @@ export const MainPage = () => {
             <Profile isMobile={isMobile}/>
             <Project isMobile={isMobile}/>
             <SkilsList isMobile={isMobile} />
-
 
             <Box
                 $position='fixed'

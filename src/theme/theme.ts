@@ -4,6 +4,7 @@ export const darkColor = {
     DEFAULT_FONT_COLOR : '#222',
     BACKGROUND: '#0d0d0e',
     FOREGROUND: '#e6e6d9',
+    FOREGROUND_REVERSE: '#0d0d0e',
     PRIMARY: '#e6e6e6',
     PRIMARY_FOREGROUND: '#000000',
     SECONDARY: '#232326',
@@ -31,6 +32,7 @@ export const lightColor = {
     DEFAULT_FONT_COLOR : '#222',
     BACKGROUND: '#ffffff', // HSL: 0, 0%, 100%
     FOREGROUND: '#0a0e1a', // HSL: 222.2, 84%, 4.9%
+    FOREGROUND_REVERSE: '#FFF', // HSL: 222.2, 84%, 4.9%
     CARD: '#ffffff', // HSL: 0, 0%, 100%
     CARD_FOREGROUND: '#0a0e1a', // HSL: 222.2, 84%, 4.9%
     POPOVER: '#ffffff', // HSL: 0, 0%, 100%

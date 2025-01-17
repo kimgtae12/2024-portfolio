@@ -90,10 +90,10 @@ const borderMixin = css<BoarderViewType>`
 
 //position이 absolute일때 사용 - 경태
 const PositionMixin = css<PositionType>`
-  top: ${({ $top }) => $top && `${$top}px`};
-  left: ${({ $left }) => $left && `${$left}px`};
-  right: ${({ $right }) => $right && `${$right}px`};
-  bottom: ${({ $bottom }) => $bottom && `${$bottom}px`};
+  top: ${({ $top }) => $top && typeof $top === 'string' ? $top : `${$top}px`};
+  left: ${({ $left }) => $left && typeof $left === 'string' ? $left : `${$left}px`};
+  right: ${({ $right }) => $right && typeof $right === 'string' ? $right : `${$right}px`};
+  bottom: ${({ $bottom }) => $bottom && typeof $bottom === 'string' ? $bottom : `${$bottom}px`};
 `;
 
 const BoxShadowMixin = css<BoxShadowType>`

@@ -42,10 +42,10 @@ export type ContainerType = {
   };
   
   export type PositionType = {
-    $top?: number;
-    $left?: number;
-    $right?: number;
-    $bottom?: number;
+    $top?: number | string;
+    $left?: number | string;
+    $right?: number | string;
+    $bottom?: number | string;
   };
   
   export type BoxShadowType = {
